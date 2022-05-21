@@ -1,55 +1,30 @@
 <html>
-    <head>
-    <title>Tim Berners-Lee</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<head>  
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
-<body>
-  <ul class="menu">
-      <li class="links"><a href="#welcome">HOME</a></li>
-      <li class="links"><a href="#video">Videos</a>
-      </li>
-      <li class="links"><a href="#work">Work</a></li>
-      <li class="links"><a href="#writings">Writings </a></li>
-      <li class="links"><a href="#contacts">Contact</a></li>
-  </ul>
-    <section id="welcome" class="parallax container">
-    <div class="parallax-inner">
-         <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQi-4GrRiraxgytp4QE_LvAVI3etbINALVH_8LfqWCCeAou6h_vb5-VvOme1kAY" class="profile">
-       <h1>I am<br><span id="name">Tim Berners-Lee </span></h1>
-        <h2>I am the founder of the world wide web
-        </h2>
-     </div>
- </section>
+<body class="body_backgorund">
 
- <section id="bio">
-    <h1>Hi!</h1>
-    <div class="line"></div>
-    <p>Sir Tim Berners-Lee invented the World Wide Web in 1989. Sir Tim is the Director of the World Wide Web Consortium (W3C ), a Web standards organization founded in 1994 which develops interoperable technologies (specifications, guidelines, software, and tools) to lead the Web to its full potential. He is a Director of the World Wide Web Foundation which was launched in 2009 to coordinate efforts to further the potential of the Web to benefit humanity.<br /><br />In 2001 he became a Fellow of the Royal Society. He has been the recipient of several international awards including the Japan Prize, the Prince of Asturias Foundation Prize, the Millennium Technology Prize, and Germany's Die Quadriga award. In 2004 he was knighted by H.M. Queen Elizabeth and in 2007 he was awarded the Order of Merit. In 2009 he was elected a foreign associate of the National Academy of Sciences.</p>
-</section>
+<div align="center">
+<h1>Paint</h1>
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+        <br><br >
+
+<!--Additional activity -->
+<span>Color-</span>
+<input type="text" id="color">
+<br><br>
+<span>Width of the Line</span>
+<input type="text" id="width_of_line">
+<br><br>
+<button onclick="ClearArea();">Clear Area</button>
+    </div>
+<script src="main.js"></script>
 </body>
-<section id="video">
-    <h1>Videos</h1>
-    <br>
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/GUrDI6OkJfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="1280" height="723" src="https://www.youtube.com/embed/OM6XIICm_qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    <br>
-<section id="work">
-    <h1>Work</h1>
-    <br>
-    <iframe width="1280"height="720" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee"></iframe>
-</section>
-<section id="writings">
-    <h1>WRITINGS</h1>
-    <div class="line"></div>
-    <a href="https://www.w3.org/People/Berners-Lee"target="_blank">Biography of a pro at coding</a>
-    <br>
-    <a href="https://webfoundation.org/2019/03/web-birthday-30/" target="_blank">What is next for the webhead of the world</a>
-
-
-
-</section>
-    </html>
+</html>
